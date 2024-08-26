@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+}
+
+.main .link {
+    margin: auto;
+    padding-top: 60px;
+}
+
+.icon {
+    font-size: 100px;
+}
+.link div {
+    transform: translateX(30px);
+}

@@ -1,0 +1,30 @@
+.content {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr;
+    grid-template-areas: 
+    "title title"
+    "filelink filealg";
+    padding: 15px 0 0 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 6px 2px rgb(215, 215, 215);
+    transition: all 1s;
+}
+.content:hover {
+    box-shadow: 0px 0px 6px 2px rgb(166, 166, 166);
+}
+.fileAlg {
+    grid-area: filealg;
+}
+.fileLink {
+    grid-area: filelink;
+    cursor: pointer;
+}
+.title {
+    pointer-events: none;
+    grid-area: title;
+    font-size: 17px;
+}
+

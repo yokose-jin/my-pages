@@ -1,0 +1,11 @@
+.apps {
+    padding-bottom: 10px;
+}
+.files {
+    padding-bottom: 10px;
+}
+.title {
+    pointer-events: none;
+    font-size: 20px;
+    padding: 5px 0px 0px 10px;
+}

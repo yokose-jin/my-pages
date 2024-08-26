@@ -1,0 +1,24 @@
+.main {
+    height: 200px;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    grid-template-areas: 
+    "title"
+    "files";
+    padding-left: 10px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px dashed rgb(58, 58, 58);
+    background-color: rgb(245, 245, 245);
+}
+
+.fieldTitle {
+    display: flex;
+    align-items: center;
+    grid-area: title;
+    font-size: large;
+}
+
+.files {
+    display: flex;
+}

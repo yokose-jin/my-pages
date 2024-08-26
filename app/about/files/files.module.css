@@ -1,0 +1,13 @@
+.main {
+    grid-area: main;
+    /* background-color: #e0cccc; */
+    color: #2d3031;
+}
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: #998976;
+    color: #fffaf4;
+}

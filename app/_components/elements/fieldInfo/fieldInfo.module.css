@@ -1,0 +1,31 @@
+.fileInfo {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    grid-template-rows: 5fr 1fr;
+    grid-template-areas:
+    "image info"
+    "title info";
+    margin: auto;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+.info {
+    grid-area: info;
+    overflow-wrap: normal;
+}
+
+.image {
+    text-align: center;
+    justify-content: center;
+    grid-area: image;
+}
+
+.image .icon {
+    font-size: 110px;
+    color: rgb(26, 43, 52);
+    transition: all 1s;
+}

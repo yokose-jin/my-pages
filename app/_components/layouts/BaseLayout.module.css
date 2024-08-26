@@ -1,0 +1,43 @@
+.home {
+    display: grid;
+    gap: 0px 2px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar main";
+}
+.sidebar {
+    grid-area: sidebar;
+    box-shadow: 0px 7px 4px 0.1px #d8d8d8;
+}
+.sidebar .sidebarBox {
+    display: flex;
+    padding: 10px 10px;
+    transition: all 0.5s;
+}
+.sidebar .sidebarBox:hover {
+    background-color: #ccc1b093;
+    color: #0e1e23;
+}
+.sidebar .sidebarBox + .sidebarBox {
+    border-top: 0.5px solid #cccccc;
+}
+.sidebar .sidebarBox .content {
+    transform: translateX(30px);
+    cursor: pointer;
+}
+.main {
+    grid-area: main;
+    color: #2d3031;
+}
+.header {
+    grid-area: header;
+    display: grid;
+    place-content: center;
+    background-color: #38545f;
+    color: #fffaf4;
+}
+
+
+
