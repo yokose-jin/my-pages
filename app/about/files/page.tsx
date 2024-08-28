@@ -10,24 +10,13 @@ function filesPage() {
     <BaseLayout title="Files">
       <main className={styles.main}>
         <FieldBase title="群論">
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"群論入門"} link={"a"}/>
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"巡回群入門"} link={"a"}/>
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"問題"} link={"a"}/>
         </FieldBase>
         <FieldBase title="環論">
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"群論入門"} link={"a"}/>
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"群論入門"} link={"a"}/>
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"群論入門"} link={"a"}/>
         </FieldBase>
         <FieldBase title="圏論">
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"群論入門"} link={"a"}/>
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"群論入門"} link={"a"}/>
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"群論入門"} link={"a"}/>
+          <FieldInfo info={"アーベル圏の定義から始まって,Mitchellの埋め込み定理までを解説します."} title={"アーベル圏入門"} link={"a"}/>
         </FieldBase>
         <FieldBase title="ホモロジー代数">
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"群論入門"} link={"a"}/>
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"群論入門"} link={"a"}/>
-          <FieldInfo info={"群の定義から始まって準同型定理までを解説します."} title={"群論入門"} link={"a"}/>
         </FieldBase>
       </main>
     </BaseLayout>
