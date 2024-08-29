@@ -5,9 +5,11 @@ import HomeIcon from "@mui/icons-material/Home";
 import styles from "./favoriteHeart.module.css";
 import { NoEncryption } from "@mui/icons-material";
 import { SvgIcon } from "@mui/material";
+import FavoCount from "@/app/api/favorite/FavoCount";
 
-const FavoriteHeart = ({ data }:{ data : any }) => {
+const FavoriteHeart = ({ data }:{ data ?: any }) => {
 	console.log(data)
+	console.log("FavoHeart")
 		return (
 			<div className="flex w-[24px] h-[24px] cursor-pointer drop-shadow">
 				<SvgIcon className="mr-1 drop-shadow">
@@ -31,6 +33,7 @@ const FavoriteHeart = ({ data }:{ data : any }) => {
 					/>
 				</SvgIcon>
 				<span>{data}</span>
+				<FavoCount/>
 			</div>
 		);
 };

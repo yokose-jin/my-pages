@@ -6,7 +6,7 @@ import FieldInfo from '@/app/_components/elements/fieldInfo/FieldInfo';
 import FavoCount from '@/app/api/favorite/FavoCount';
 
 //各分野の最新記事３つをとってくる
-function filesPage() {
+function filesPage({data}:{data:any}) {
   return (
     <BaseLayout title="Files">
       <main className={styles.main}>

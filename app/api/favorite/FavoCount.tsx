@@ -21,10 +21,11 @@ async function getFavoCount () {
 export default async function FavoCount () {
     const favoCount = await getFavoCount();
     console.log(favoCount)
+    console.log("FavoCount")
     return (
         <Suspense fallback={<div>Loading...</div>}>
             <FavoriteHeart data={favoCount.map((obj:any)=>{
-                return obj.favoCount
+                return obj.food
             })} />
         </Suspense>
     );
