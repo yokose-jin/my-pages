@@ -5,19 +5,18 @@ import Link from 'next/link'
 import FavoriteHeart from '../favoriteHeart/FavoriteHeart'
 
 type FieldInfoProps = {
-  data?: any;
   info: string;
   title: string;
   link: string;
 }
 
-function FieldInfo({data, ...props}:FieldInfoProps) {
+function FieldInfo({...props}:FieldInfoProps) {
   return (
     <div className={styles.fileInfo}>
         <div className={styles.image}><Link href={props.link} target='_blank'><InsertDriveFile  className={styles.icon}/></Link></div>
         <div className={styles.info}>{props.info}</div>
         <span className={styles.title}>{props.title}</span>
-        <div className={styles.heart}><FavoriteHeart data={data}/></div>
+        <div className={styles.heart}><FavoriteHeart/></div>
     </div>
   )
 }

@@ -3,15 +3,11 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import HomeIcon from "@mui/icons-material/Home";
 import styles from "./favoriteHeart.module.css";
-import { NoEncryption } from "@mui/icons-material";
 import { SvgIcon } from "@mui/material";
-import FavoCount from "@/app/api/favorite/FavoCount";
 
-const FavoriteHeart = ({ data }:{ data ?: any }) => {
-	console.log(data)
-	console.log("FavoHeart")
+const FavoriteHeart = () => {
 		return (
-			<div className="flex w-[24px] h-[24px] cursor-pointer drop-shadow">
+			<div className="flex w-[24px] h-[24px] cursor-pointer drop-shadow" onClick={()=>{alert("clicked")}}>
 				<SvgIcon className="mr-1 drop-shadow">
 					<defs>
 						<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -32,8 +28,6 @@ const FavoriteHeart = ({ data }:{ data ?: any }) => {
 						fill={"url(#grad1)"}
 					/>
 				</SvgIcon>
-				<span>{data}</span>
-				<FavoCount/>
 			</div>
 		);
 };
