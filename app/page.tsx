@@ -6,13 +6,6 @@ import Mainthumbnail from "./_components/elements/mainThumbnail/Mainthumbnail";
 import BaseLayout from "@/app/_components/layouts/BaseLayout";
 
 const Pages = async () => {
-  try {
-    const res = await fetch('http://localhost:3000/api/favorite');
-    if (!res.ok) {
-      throw new Error('Network response was not ok');
-    }
-    const posts = await res.json();
-    console.log(posts);
     return (
       <BaseLayout title="Home">
         <div className={styles.apps}>
@@ -33,21 +26,8 @@ const Pages = async () => {
           <Mainthumbnail>blog2</Mainthumbnail>
           <Mainthumbnail>blog3</Mainthumbnail>
         </div>
-        {/* <h1>
-          {posts.map((post: any) => (
-            <li key={post._id}>{post.food}</li>
-          ))}
-        </h1> */}
       </BaseLayout>
     )
-  }catch(error) {
-    console.error('Fetch error:', error);
-    return (
-      <BaseLayout>
-        <h1>Error loading posts</h1>
-      </BaseLayout>
-    );
-  }
 }
 
 export default Pages;

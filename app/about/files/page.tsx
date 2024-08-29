@@ -3,6 +3,7 @@ import FieldBase from '@/app/_components/elements/fieldBase/FieldBase';
 import styles from "./files.module.css";
 import BaseLayout from '@/app/_components/layouts/BaseLayout';
 import FieldInfo from '@/app/_components/elements/fieldInfo/FieldInfo';
+import FavoCount from '@/app/api/favorite/FavoCount';
 
 //各分野の最新記事３つをとってくる
 function filesPage() {
@@ -15,9 +16,12 @@ function filesPage() {
         </FieldBase>
         <FieldBase title="圏論">
           <FieldInfo info={"アーベル圏の定義から始まって,Mitchellの埋め込み定理までを解説します."} title={"アーベル圏入門"} link={"a"}/>
+          <FieldInfo info={"アーベル圏の定義から始まって,Mitchellの埋め込み定理までを解説します."} title={"アーベル圏入門"} link={"a"}/>
         </FieldBase>
         <FieldBase title="ホモロジー代数">
+          <FieldInfo info={"アーベル圏の定義から始まって,Mitchellの埋め込み定理までを解説します."} title={"アーベル圏入門"} link={"a"}/>
         </FieldBase>
+        <FavoCount/>
       </main>
     </BaseLayout>
   )
