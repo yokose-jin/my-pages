@@ -9,4 +9,5 @@ body::-webkit-scrollbar {
 
 body {
     color:#363b3f;
+    height: 100vh;
 }

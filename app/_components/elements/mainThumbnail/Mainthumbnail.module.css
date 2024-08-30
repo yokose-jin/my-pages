@@ -9,11 +9,12 @@
     padding: 15px 0 0 20px;
     border-radius: 10px;
     margin: 10px;
-    box-shadow: 0px 0px 6px 2px rgb(215, 215, 215);
+    /* box-shadow: 0px 0px 6px 2px rgb(215, 215, 215); */
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     transition: all 1s;
 }
 .content:hover {
-    box-shadow: 0px 0px 6px 2px rgb(166, 166, 166);
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
 }
 .fileAlg {
     grid-area: filealg;
